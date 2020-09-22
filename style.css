@@ -66,7 +66,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 15vh;
+    height: 10vh;
 }
 
 nav {
@@ -94,41 +94,44 @@ img {
 }
 
 .body{
-    margin: 0% 5% 0% 5%;
-    padding: 15%;
-    background-image: url("images/heronewss.svg");
+    height: 40vh;
+    margin-top: 2%;
+    padding: 10% 15% 10% 15%;
+    background-image: url("images/heronewssnews.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 h1 {
     font-size: 4rem;
-    padding-bottom: 5%;
-    color: #ffffff;
+    padding: 10% 0% 3% 0%;
+    color: #183108;
 }
 
 h2 {
     font-size: 2rem;
-    padding-bottom: 5%;
-    color: #ffffff;
+    padding: 3% 0 3% 0;
+    color: #183108;
 }
 
 .body button {
     height: 35px;
     width: 200px;
+    margin-top: 2%;
     border-radius: 5%;
-    background: #eaecf5;
-    color: #183108;
+    background: #183108;
+    color: #ffffff;
     border: transparent;
 }
 
 .mid_section {
-    margin: 1% 5% 3% 5%;
+    margin: 0%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-image: url(images/Easy-Indoor-Garden-ideas.jpg);
-    background-position: center;
+    background-image: url(images/tropical-flower-pattern-vector-4937622.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -138,8 +141,8 @@ h2 {
     font-size: 2rem;
     text-align: center;
     color: #1e0b0a;
-    border: 2px solid #183108;
-    padding: 7%;
+    border: 3px solid #183108;
+    padding: 5%;
     margin: 1%;
     background-color: #eaecf5
 }
