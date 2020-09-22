@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap');
+/* font-family: 'Poiret One', cursive;
+font-family: 'Roboto', sans-serif; */
+
+/* Color Guide:
+Soft green - #8fbcb3 (header, footer)
+Dark font - #293845 (nav, p when background is light)
+Green accent - #217868 (special text, like Sign Up)
+Neutral tan - #c4bdaf (background)
+Darker neutral tan - #887a5f (buttons)
+Darker gray, transparent - rgba(65,65,69, 0.7) (make text stand out over images)
+*/
+
+
+/* RESET & SETUP */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    /* border: 1px solid gray; */
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+h2, h3, h4, h5 {
+    /* font-size: 18px;
+    margin-bottom: 15px; */
+    font-family: 'Poiret One', cursive;
+    color: white;
+    
+}
+
+p {
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    color: #293845;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #293845;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+button {
+    background-color: #887a5f;
+    color: white;
+    padding: 2% 8%;
+    font-family: 'Poiret One', cursive;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.05rem;;
+}
+
+/* end of reset & setup */
+
+
+
+
+/* HEADER STYLING */
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #8fbcb3;
+    align-items: center;
+}
+h1{
+    color: white;
+    padding: 3% 2%;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+
+header nav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+header a {
+    text-align: center;
+    color: #293845;
+    margin: 3%;
+    padding-bottom: 0.8%;
+}
+#signUpButton {
+    color: #217868;
+    font-weight: bolder;
+    border-bottom: 2px solid #217868;
+}
+
+/* end of header styling */
+
+
+
+
+
+
+/* FOOTER STYLING */
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #8fbcb3;
+    align-items: center;
+}
+#leftNav {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: right;
+    width: 15%;
+    line-height: 1.5rem;
+}
+
+#rightNav {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    width: 15%;
+    line-height: 1.5rem;
+}
+
+footer h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 8%;
+}
+#newsletter{
+    padding: 2% 4%;
+}
+#newsletter p{
+    background-color: white;
+    text-align: center;
+}
+/* end of footer styling */
+
+
+
+
+
+
+/* HOME - HERO SECTION STYLING */
+
+#heroSection {
+    background-image: url("images/WMP Hero 1.jpg");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  #heroText {
+    position: absolute;
+    width: 35%;
+    /* top: 50%;
+    left: 20%; */
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    margin: 4% 6%;
+    padding: 0 1%;
+    background-color:rgba(65,65,69, 0.7);
+    border-radius: 8px;
+  }
+
+  #heroText h2 {
+      font-size: 3rem;
+      padding: 4% 0;
+  }
+  #heroText p{
+      color: white;
+  }
+
+/* end of home - hero section styling*/
+
+/* HOME - EVEN SIMPLER STYLING */
+
+#evenSimpler {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #c4bdaf;
+    padding: auto 6%;
+    color: white;
+    padding: 4% 6%;
+}
+
+#evenSimpler h3 {
+    font-size: 2rem;
+    padding-bottom: 1%;
+}
+/* end of home - even simpler styling */
+
+
+
+
+
+/* HOME - GALLERY STYLING */
+
+#gallery{
+    display: flex;
+    /* padding: 0 6%; */
+}
+
+.galleryBox{
+    display: flex;
+    margin: 6%;
+    position: relative;
+    /* max-width: 10%; */
+}
+.galleryBox img {
+    max-width: 100%;
+    /* height: auto; */
+}
+.galleryBox button {
+    position: absolute;
+    left: 30%;
+    /* margin-left: -50%; */
+    top: 45%;
+    /* margin-top: -50%; */
+    width: 40%;
+    height: 10%;
+}
+
+/* end of home - gallery styling */
+
+
