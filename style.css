@@ -1,3 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif; */
+html {
+    font-size: 62.5%;
+    background-color: #eaecf5;
 
+}
 
+.container {
+    font-family: 'Lato', sans-serif;
+   
+}
+
+h1, p {
+    font-family: 'Playfair Display', serif;
+}
+.header_content {
+    margin: 1% 5% 0% 10%;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+
+}
+
+a {
+    font-size: 2rem;
+    padding-left: 6%;
+    text-decoration: none;
+    color: #183108;
+}
+
+.header_img {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+}
+
+.body{
+    margin: 0% 5% 0% 5%;
+    padding: 15%;
+    background-image: url("images/heronewss.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-bottom: 5%;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 5%;
+    color: #ffffff;
+}
+
+.body button {
+    height: 35px;
+    width: 200px;
+    border-radius: 5%;
+    background: #eaecf5;
+    color: #183108;
+    border: transparent;
+}
+
+.mid_section {
+    margin: 1% 5% 3% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(images/Easy-Indoor-Garden-ideas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mid_section p {
+    width: 10%;
+    height: 2%;
+    font-size: 2rem;
+    text-align: center;
+    color: #1e0b0a;
+    border: 2px solid #183108;
+    padding: 7%;
+    margin: 1%;
+    background-color: #eaecf5
+}
+
+footer {
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer button {
+    height: 35px;
+    width: 150px;
+    border-radius: 5%;
+    background: #183108;
+    color: #eaecf5;
+    border: transparent;
+}
+
+.bottom_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: #1e0b0a;
+}
 
