@@ -34,7 +34,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
     border: 0;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
@@ -111,7 +111,7 @@ button {
     /* white-space: nowrap; */
 }
 button:hover {
-    background-color: #c4bdaf;
+    background-color: #8fbcb3;
     font-weight: bolder;
 }
 
@@ -343,6 +343,7 @@ footer h3 {
 }
 #sanctuaryInfo h2 {
     font-size: 4rem;
+    padding-bottom: 3%;
 }
 #sanctuaryInfo div {
     display: flex;
@@ -365,6 +366,51 @@ footer h3 {
 
 
 /* ABOUT - STEPS STYLES */
+#steps {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 6%;
+}
+#steps h4 {
+    color: #217868;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 0 2%;
+}
+.stepsImgRight {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.stepsImgLeft {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#steps img {
+    width: 40%;
+}
+.stepsText {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stepsTextLeft {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+.stepsTextLeft p {
+    padding: 2%;
+}
+.stepsText p {
+    padding: 2%;
+}
+
+
 
 
 /* end of about - steps styles */
