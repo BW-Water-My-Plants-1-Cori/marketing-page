@@ -242,12 +242,18 @@ footer h3 {
 
 /* end of home - hero section styling*/
 
+
+
+/* --- HOME PAGE --- */
+
 /* HOME - EVEN SIMPLER STYLING */
 
 #evenSimpler {
     display: flex;
     flex-flow: column nowrap;
-    background-color: #c4bdaf;
+    background: rgb(196,189,175);
+    background: linear-gradient(90deg, rgba(196,189,175,1) 0%, rgba(196,189,175,1) 67%, rgba(143,188,179,1) 100%);
+    /* https://cssgradient.io/ super fun source! */
     padding: auto 6%;
     color: white;
     padding: 4% 6%;
@@ -256,6 +262,10 @@ footer h3 {
 #evenSimpler h3 {
     font-size: 2rem;
     padding-bottom: 1%;
+}
+#evenSimpler span{
+    color: #217868;
+    font-size: 1.5rem;
 }
 /* end of home - even simpler styling */
 
@@ -266,6 +276,7 @@ footer h3 {
 /* HOME - GALLERY STYLING */
 
 #gallery{
+    margin-top: 4%;
     display: flex;
     /* padding: 0 6%; */
 }
@@ -292,13 +303,69 @@ footer h3 {
 
 /* end of home - gallery styling */
 
+
+
+
+
+
 /* HOME - FLOATING IMAGE STYLING */
 #floatingImage{
     position: absolute;
     left: 60%;
     top: 35%;
-    width: 30%;
+    width: 33%;
     max-width: 500px;
     z-index: 2;
     border: 2px solid white;
 }
+/* end of home - floating image styling */
+
+
+
+
+
+
+
+
+
+
+
+/* --- ABOUT PAGE --- */
+
+/* ABOUT - HEADLINE STYLES */
+#sanctuaryInfo {
+    display: flex;
+    padding: 2% 6%;
+    background-color: #c4bdaf;
+}
+#sanctuaryInfo img{
+    width: 38%;
+}
+#sanctuaryInfo h2 {
+    font-size: 4rem;
+}
+#sanctuaryInfo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#sanctuaryInfo button {
+    width: 30%;
+}
+#sanctuaryInfo span{
+    color: #217868;
+    font-size: 1.5rem;
+}
+
+
+/* end of about - headline styles */
+
+
+
+
+
+/* ABOUT - STEPS STYLES */
+
+
+/* end of about - steps styles */
+
