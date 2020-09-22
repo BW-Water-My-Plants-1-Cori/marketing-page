@@ -33,8 +33,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-    border: 0;
-    /* border: 1px solid gray; */
+    /* border: 0; */
+    border: 1px solid gray;
 	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
@@ -173,13 +173,13 @@ header a {
     /* transform: translate(-50%, -50%); */
     color: white;
     margin: 4% 6%;
-    padding-left: 1%;
+    padding: 0 1%;
     background-color:rgba(65,65,69, 0.7);
     border-radius: 8px;
   }
 
   #heroText h2 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       padding: 4% 0;
   }
   #heroText p{
@@ -203,5 +203,38 @@ header a {
     font-size: 2rem;
     padding-bottom: 1%;
 }
+/* end of home - even simpler styling */
 
-/*  */
+
+
+
+
+/* HOME - GALLERY STYLING */
+
+#gallery{
+    display: flex;
+    /* padding: 0 6%; */
+    background-color: 
+}
+
+.galleryBox{
+    display: flex;
+    margin: 6%;
+    position: relative;
+    /* max-width: 10%; */
+}
+.galleryBox img {
+    max-width: 100%;
+    /* height: auto; */
+}
+.galleryBox button {
+    position: absolute;
+    left: 30%;
+    /* margin-left: -50%; */
+    top: 45%;
+    /* margin-top: -50%; */
+    width: 40%;
+    height: 10%;
+}
+
+/* end of home - gallery styling */
