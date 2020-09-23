@@ -108,10 +108,15 @@ a:hover{
     border: none;
     text-transform: uppercase;
     font-size: 1.05rem;
-    /* white-space: nowrap; */
+    text-align: center;
+    width: 10rem;
+    max-height: 5rem;
 }
 .button:hover {
     background-color: #8fbcb3;
+    font-weight: bolder;
+}
+.boldText {
     font-weight: bolder;
 }
 
@@ -291,7 +296,7 @@ footer h3 {
     max-width: 100%;
     /* height: auto; */
 }
-.galleryBox button {
+.galleryBox .button {
     position: absolute;
     left: 30%;
     /* margin-left: -50%; */
@@ -349,10 +354,11 @@ footer h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-right: 4%;
 }
-#sanctuaryInfo button {
+/* #sanctuaryInfo button {
     width: 30%;
-}
+} */
 #sanctuaryInfo span{
     color: #217868;
     font-size: 1.5rem;
