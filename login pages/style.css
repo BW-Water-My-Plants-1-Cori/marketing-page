@@ -47,6 +47,8 @@ html {
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
     background-image: linear-gradient(to bottom right, #ff0b93, #b831db, #4123c2);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, p {
@@ -88,8 +90,8 @@ header img {
 
 h1 {
     font-size: 3rem;
-    margin-left: 15%;
-    margin-bottom: 5%;
+    margin: 10% 0% 5% 15%;
+
     font-weight: bold;
 }
 
@@ -102,18 +104,13 @@ label {
     color: #eaecf5;
 }
 
-#fname, #lname, #email, #othere {
+#email, #pass {
     width: 700px;
     height: 35px;
     margin: 1% 1% 1% 0%;
     background-color: #eaecf5;
     border: 2px solid black;
     border-radius: 3px;
-}
-
-#male, #female, #other, #gender {
-    margin: 1% 1% 1% 0%;
-    border: black;
 }
 
 #submit {
@@ -131,5 +128,5 @@ label {
 
 footer {
     text-align: center;
-    margin: 18% 0%;
+    margin: 20% 0%;
 }

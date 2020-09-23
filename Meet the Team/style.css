@@ -59,19 +59,21 @@ header {
     justify-content: space-between;
 	height: 10vh;
 	margin: 5% 0% 3% 0%;
+	background-color: white;
 }
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 40%;
+	width: 40%;
+	margin-right: 2%;
 }
 
 a {
     font-size: 2rem;
-    padding-left: 6%;
+	padding-left: 6%;
     text-decoration: none;
-    color: #f26ca7;
+	color: #f26ca7;	
 }
 
 .header_img {
@@ -84,13 +86,19 @@ header img {
     width: 100px;
 }
 
-.content_container {
+.container {
 	background-image: url(images/tropical-flower-pattern.svg);
 	background-position: center;
 	background-repeat: repeat;
 	background-size: cover;
 }
 
+
+.people-container {
+	background-color: white;
+	width: 90%;
+	margin-left: 5%;
+}
 .info_container {
 	margin-left: 5%;
 	height: 30vh;
@@ -122,10 +130,6 @@ h2 {
 	color: #151761;
 }
 
-b {
-
-}
-
 button {
 	margin-left: 42%;
 	height: 35px;
@@ -139,36 +143,46 @@ h3 {
 	text-align: center;
 	width: 220px;
 	height: 30px;
+	padding-top: 5%;
 	margin-left: 41%;
 	margin-bottom: 5%;
 	font-size: 3rem;
-	color: #ffffff;
+	color: #f0a7a0;
 	font-weight: bold;
 	margin-top: 3%;
-	background-color: #947bd3;
-	border-radius: 3px;
+	text-decoration: underline;
 }
 
 .name, .title {
 	font-size: 2.5rem;
-	color: white;
+	color: #947bd3;
 	display: block;
+}
+
+.title {
+color: #5e4ae3;
 }
 
 .creators img {
 	border-radius: 50%;
-	width: 300px;
-	border: 2px dashed white;
+	width: 200px;
+	height: 200px;
+	border: 2px dashed #f26ca7;
+	margin-right: 2%;
 }
 
 .person {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	align-items: center;
+	margin: 2% 2% 0% 0%;
 }
 
 
 .creators {
 	margin-left: 15%;
+	display: flex;
+	flex-direction: column;
+
 }
 

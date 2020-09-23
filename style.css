@@ -126,7 +126,7 @@ h2 {
     width: 200px;
     margin-top: 2%;
     margin-bottom: 10%;
-    border-radius: 10px;
+    border-radius: 3px;
     background: #183108;
     color: #eaecf5;
     border: transparent;
@@ -165,7 +165,7 @@ footer {
 footer button {
     height: 35px;
     width: 150px;
-    border-radius: 10px;
+    border-radius: 3px;
     background: #183108;
     color: #eaecf5;
     border: transparent;
