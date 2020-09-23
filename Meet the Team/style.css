@@ -66,7 +66,6 @@ nav {
     flex-direction: row;
     align-items: center;
 	width: 40%;
-	margin-right: 2%;
 }
 
 a {
@@ -184,6 +183,50 @@ color: #5e4ae3;
 	margin: 2% 2% 0% 0%;
 }
 
+@media (max-width: 1000px) {
+	button {
+		margin-left: 37%;
+	}
+
+	nav {
+		margin-right: 5%;
+	}
+}
+
+@media (max-width: 745px) {
+
+	.header_img {
+		display: none;
+	}
+
+	nav {
+		width: 100%;
+		margin: 0% 5%;
+	}
+
+	h1 {
+		padding: 8% 0%;
+		margin: 2% 0%;
+	}
+
+	.info_container p {
+		margin: 0%;
+		padding-left: 25%;
+	}
+
+	button {
+		display: none;
+	}
+
+	h3 {
+		margin: 5%;
+		padding-left: 15%;
+	}
+
+	.person {
+		padding-left: 9%;
+	}
+}
 
 
 
