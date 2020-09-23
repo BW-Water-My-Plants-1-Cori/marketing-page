@@ -89,17 +89,24 @@ a {
     align-items: center;
 }
 
-img {
+header img {
     width: 100px;
 }
 
-.body{
+.body {
     height: 40vh;
     margin-top: 2%;
     padding: 10% 15% 10% 15%;
-    background-image: url("images/heronewssnews.svg");
-    background-size: cover;
+    background-image: url("images/girl.svg");
+    background-position: 90% 50%;
     background-repeat: no-repeat;
+}
+
+.body div {
+    background-color: #F05D33;
+    width: 75%;
+    border-radius: 5px;
+    padding-left: 2%;
 }
 
 h1 {
@@ -118,9 +125,10 @@ h2 {
     height: 35px;
     width: 200px;
     margin-top: 2%;
-    border-radius: 5%;
+    margin-bottom: 10%;
+    border-radius: 10px;
     background: #183108;
-    color: #ffffff;
+    color: #eaecf5;
     border: transparent;
 }
 
@@ -157,7 +165,7 @@ footer {
 footer button {
     height: 35px;
     width: 150px;
-    border-radius: 5%;
+    border-radius: 10px;
     background: #183108;
     color: #eaecf5;
     border: transparent;
