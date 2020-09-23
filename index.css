@@ -90,6 +90,10 @@ a {
     font-family: 'Roboto', sans-serif;
     color: #293845;
 }
+a:hover{
+    color: #217868;
+    font-weight: bolder;
+}
 
 .container {
     width: 800px;
@@ -98,12 +102,17 @@ a {
 button {
     background-color: #887a5f;
     color: white;
-    padding: 2% 8%;
+    padding: 2% 4%;
     font-family: 'Poiret One', cursive;
     border-radius: 8px;
     border: none;
     text-transform: uppercase;
-    font-size: 1.05rem;;
+    font-size: 1.05rem;
+    /* white-space: nowrap; */
+}
+button:hover {
+    background-color: #8fbcb3;
+    font-weight: bolder;
 }
 
 /* end of reset & setup */
@@ -146,6 +155,9 @@ header a {
     color: #217868;
     font-weight: bolder;
     border-bottom: 2px solid #217868;
+}
+#signUpButton:hover{
+    color: white;
 }
 
 /* end of header styling */
@@ -212,20 +224,17 @@ footer h3 {
   /* Place text in the middle of the image */
   #heroText {
     position: absolute;
-    width: 35%;
-    /* top: 50%;
-    left: 20%; */
-    /* transform: translate(-50%, -50%); */
+    width: 40%;
     color: white;
     margin: 4% 6%;
-    padding: 0 1%;
+    padding: 1.8%;
     background-color:rgba(65,65,69, 0.7);
     border-radius: 8px;
   }
 
   #heroText h2 {
       font-size: 3rem;
-      padding: 4% 0;
+      padding-bottom: 4%;
   }
   #heroText p{
       color: white;
@@ -233,12 +242,18 @@ footer h3 {
 
 /* end of home - hero section styling*/
 
+
+
+/* --- HOME PAGE --- */
+
 /* HOME - EVEN SIMPLER STYLING */
 
 #evenSimpler {
     display: flex;
     flex-flow: column nowrap;
-    background-color: #c4bdaf;
+    background: rgb(196,189,175);
+    background: linear-gradient(90deg, rgba(196,189,175,1) 0%, rgba(196,189,175,1) 67%, rgba(143,188,179,1) 100%);
+    /* https://cssgradient.io/ super fun source! */
     padding: auto 6%;
     color: white;
     padding: 4% 6%;
@@ -247,6 +262,10 @@ footer h3 {
 #evenSimpler h3 {
     font-size: 2rem;
     padding-bottom: 1%;
+}
+#evenSimpler span{
+    color: #217868;
+    font-size: 1.5rem;
 }
 /* end of home - even simpler styling */
 
@@ -257,6 +276,7 @@ footer h3 {
 /* HOME - GALLERY STYLING */
 
 #gallery{
+    margin-top: 4%;
     display: flex;
     /* padding: 0 6%; */
 }
@@ -278,9 +298,120 @@ footer h3 {
     top: 45%;
     /* margin-top: -50%; */
     width: 40%;
-    height: 10%;
+    /* height: 10%; */
 }
 
 /* end of home - gallery styling */
 
+
+
+
+
+
+/* HOME - FLOATING IMAGE STYLING */
+#floatingImage{
+    position: absolute;
+    left: 60%;
+    top: 35%;
+    width: 33%;
+    max-width: 500px;
+    z-index: 2;
+    border: 2px solid white;
+}
+/* end of home - floating image styling */
+
+
+
+
+
+
+
+
+
+
+
+/* --- ABOUT PAGE --- */
+
+/* ABOUT - HEADLINE STYLES */
+#sanctuaryInfo {
+    display: flex;
+    padding: 2% 6%;
+    background-color: #c4bdaf;
+}
+#sanctuaryInfo img{
+    width: 38%;
+}
+#sanctuaryInfo h2 {
+    font-size: 4rem;
+    padding-bottom: 3%;
+}
+#sanctuaryInfo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#sanctuaryInfo button {
+    width: 30%;
+}
+#sanctuaryInfo span{
+    color: #217868;
+    font-size: 1.5rem;
+}
+
+
+/* end of about - headline styles */
+
+
+
+
+
+/* ABOUT - STEPS STYLES */
+#steps {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 6%;
+}
+#steps h4 {
+    color: #217868;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 0 2%;
+}
+.stepsImgRight {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.stepsImgLeft {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#steps img {
+    width: 40%;
+}
+.stepsText {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stepsTextLeft {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+.stepsTextLeft p {
+    padding: 2%;
+}
+.stepsText p {
+    padding: 2%;
+}
+
+
+
+
+/* end of about - steps styles */
 
