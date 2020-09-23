@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif; */
+html {
+    font-size: 62.5%;
+    background-color: #eaecf5;
+
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+   
+}
+
+h1, p {
+    font-family: 'Playfair Display', serif;
+}
+.header_content {
+    margin: 1% 5% 0% 10%;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+
+}
+
+a {
+    font-size: 2rem;
+    padding-left: 6%;
+    text-decoration: none;
+    color: #183108;
+}
+
+.header_img {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+.body {
+    height: 40vh;
+    margin-top: 2%;
+    padding: 10% 15% 10% 15%;
+    background-image: url("images/girl.svg");
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+}
+
+.body div {
+    background-color: #F05D33;
+    width: 75%;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 10% 0% 3% 0%;
+    color: #183108;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 3% 0 3% 0;
+    color: #183108;
+}
+
+.body button {
+    height: 35px;
+    width: 200px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    border-radius: 3px;
+    background: #183108;
+    color: #eaecf5;
+    border: transparent;
+}
+
+.mid_section {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(images/tropical-flower-pattern-vector-4937622.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.mid_section p {
+    width: 10%;
+    height: 2%;
+    font-size: 2rem;
+    text-align: center;
+    color: #1e0b0a;
+    border: 3px solid #183108;
+    padding: 5%;
+    margin: 1%;
+    background-color: #eaecf5
+}
+
+footer {
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer button {
+    height: 35px;
+    width: 150px;
+    border-radius: 3px;
+    background: #183108;
+    color: #eaecf5;
+    border: transparent;
+}
+
+.bottom_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: #1e0b0a;
+}
+
