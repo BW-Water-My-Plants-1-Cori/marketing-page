@@ -99,7 +99,7 @@ a:hover{
     width: 800px;
     margin: 0 auto;
 }
-button {
+.button {
     background-color: #887a5f;
     color: white;
     padding: 2% 4%;
@@ -110,7 +110,7 @@ button {
     font-size: 1.05rem;
     /* white-space: nowrap; */
 }
-button:hover {
+.button:hover {
     background-color: #8fbcb3;
     font-weight: bolder;
 }
