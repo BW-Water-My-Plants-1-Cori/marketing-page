@@ -152,6 +152,12 @@ h3 {
 	margin-top: 3%;
 	text-decoration: underline;
 }
+.creators {
+	margin-left: 15%;
+	display: flex;
+	flex-direction: column;
+
+}
 
 .name, .title {
 	font-size: 2.5rem;
@@ -179,10 +185,5 @@ color: #5e4ae3;
 }
 
 
-.creators {
-	margin-left: 15%;
-	display: flex;
-	flex-direction: column;
 
-}
 
