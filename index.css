@@ -34,7 +34,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
     border: 0;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
 	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
@@ -226,7 +226,7 @@ footer h3 {
 
 #heroSection {
     background-image: url("images/WMP Hero 1.jpg");
-    height: 60vh;
+    height: 50vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -434,9 +434,150 @@ footer h3 {
 
 
 
+/* --- TABLET STYLES --- */
+
+@media (max-width: 800px){
+    /* Header to row */
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        background-color: #8fbcb3;
+        align-items: center;
+    }
+
+    /* Smaller logo, no side padding*/
+    h1{
+        padding: 3% 0;
+        font-size: 8vw;
+    }
+
+    /* Header nav is in a row, smaller font, padding re-arranged */
+    header nav {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+    
+    header a {
+        text-align: center;
+        margin: 1% 3%;
+        font-size: 2.5vw;
+    }
+    /* Home hero image a little longer */
+    #heroSection {
+        background-image: url("images/WMP Hero 1.jpg");
+        height: 60vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #heroText h2 {
+        font-size: 8vw;
+        padding-bottom: 4%;
+    }
+    #heroText p{
+        color: white;
+        font-size: 2vw;
+    }
+    /* Re-order floating image to bottom of hero and make smaller */
+    #floatingImage{
+        position: absolute;
+        left: 55%;
+        top: 35vw;
+        width: 40%;
+    }
+
+    /* Even simpler text smaller, centered title, take out gradient */
+    #evenSimpler {
+        display: flex;
+        flex-flow: column nowrap;
+        background: #c4bdaf;
+        padding: auto 3%;
+        color: white;
+        padding: 4% 6%;
+    }
+    
+    #evenSimpler h3 {
+        font-size: 7vw;
+        padding-bottom: 1%;
+        text-align: left;
+        width: 50%;
+    }
+    #evenSimpler span{
+        color: #217868;
+        font-size: 1.5rem;
+    }
+
+
+    /* Gallery to column */
+    #gallery{
+        margin-top: 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Link size smaller */
+    footer {
+        font-size: .8em;
+    }
+
+    /* Re-order and center footer content */
+    #newsletterDesktop{
+        display: none;
+    }
+    #newsletterMobile{
+        display: block;
+        text-align: center;;
+    }
+    footer {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    /* Footer nav to row */
+
+    /* #leftNav {
+        flex-flow: row wrap;
+        text-align: center;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: 1px dotted #217868;
+    }
+    #rightNav {
+        flex-flow: row wrap;
+        text-align: center;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: 1px dotted #217868;
+    } */
+
+    #leftNav {
+        flex-flow: column wrap;
+        text-align: right;
+        width: 45%;
+        justify-content: space-around;
+        /* border-bottom: 1px dotted #217868; */
+    }
+    #rightNav {
+        flex-flow: column wrap;
+        text-align: left;
+        width: 45%;
+        justify-content: space-around;
+        /* border-bottom: 1px dotted #217868; */
+    }
+}
+
+
+
+
+
 /* --- MOBILE STYLES --- */
 
-@media (max-width: 300px){
+@media (max-width: 500px){
     /* Header to row */
     header {
         display: flex;
@@ -529,6 +670,7 @@ footer h3 {
         font-size: 9vw;
         padding-bottom: 1%;
         text-align: center;
+        width: 100%;
     }
     #evenSimpler span{
         color: #217868;
@@ -548,7 +690,7 @@ footer h3 {
         font-size: .8em;
     }
 
-    /* Re-order footer content */
+    /* Re-order and center footer content */
     #newsletterDesktop{
         display: none;
     }
@@ -558,7 +700,7 @@ footer h3 {
     }
     footer {
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     /* Footer nav to row */
