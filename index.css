@@ -113,8 +113,9 @@ a:hover{
     max-height: 5rem;
 }
 .button:hover {
-    background-color: #8fbcb3;
+    background-color: #217868;
     font-weight: bolder;
+    color: white;
 }
 .boldText {
     font-weight: bolder;
@@ -199,14 +200,14 @@ footer {
 footer h3 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 8%;
+    margin-bottom: 1%;
 }
 #newsletter{
     padding: 2% 4%;
 }
 #newsletter p{
-    background-color: white;
     text-align: center;
+    font-size: 0.7rem;
 }
 /* end of footer styling */
 
@@ -340,11 +341,13 @@ footer h3 {
 /* ABOUT - HEADLINE STYLES */
 #sanctuaryInfo {
     display: flex;
-    padding: 2% 6%;
-    background-color: #c4bdaf;
+    padding: 0 6%;
+    /* background-color: #c4bdaf; */
+    background: rgb(196,189,175);
+    background: linear-gradient(90deg, rgba(196,189,175,1) 0%, rgba(196,189,175,1) 71%, rgba(143,188,179,1) 77%, rgba(143,188,179,1) 100%);
 }
 #sanctuaryInfo img{
-    width: 38%;
+    max-width: 38%;
 }
 #sanctuaryInfo h2 {
     font-size: 4rem;
