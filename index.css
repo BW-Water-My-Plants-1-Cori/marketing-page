@@ -8,11 +8,11 @@
 font-family: 'Roboto', sans-serif; */
 
 /* Color Guide:
-Soft green - #8fbcb3 (header, footer)
-Dark font - #293845 (nav, p when background is light)
-Green accent - #217868 (special text, like Sign Up)
-Neutral tan - #c4bdaf (background)
+Soft green - #8fbcb3 (header, footer, backgrounds)
+Green accent - #217868 (special text, like Sign Up, buttons on hover)
+Neutral tan - #c4bdaf (backgrounds)
 Darker neutral tan - #887a5f (buttons)
+Darker gray - rgb(65,65,69) (nav, p when background is light)
 Darker gray, transparent - rgba(65,65,69, 0.7) (make text stand out over images)
 */
 
@@ -34,7 +34,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
     border: 0;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
@@ -267,13 +267,14 @@ footer h3 {
     /* https://cssgradient.io/ super fun source! */
     padding: auto 6%;
     color: white;
-    padding: 4% 6%;
+    padding: 4% 4%;
 }
 
 #evenSimpler h3 {
     font-size: 2rem;
     padding-bottom: 1%;
     text-transform: uppercase;
+    width: 55%;
 }
 #evenSimpler span{
     color: #217868;
@@ -323,9 +324,9 @@ footer h3 {
 /* HOME - FLOATING IMAGE STYLING */
 #floatingImage{
     position: absolute;
-    left: 60%;
-    top: 35%;
-    width: 33%;
+    left: 55%;
+    top: 30vw;
+    width: 40%;
     max-width: 500px;
     z-index: 2;
     border: 2px solid white;
@@ -348,22 +349,24 @@ footer h3 {
 #sanctuaryInfo {
     display: flex;
     padding: 0 6%;
-    /* background-color: #c4bdaf; */
     background: rgb(196,189,175);
     background: linear-gradient(90deg, rgba(196,189,175,1) 0%, rgba(196,189,175,1) 71%, rgba(143,188,179,1) 77%, rgba(143,188,179,1) 100%);
+    align-items: center;
 }
 #sanctuaryInfo img{
-    max-width: 38%;
+    height: 55vw;
 }
 #sanctuaryInfo h2 {
-    font-size: 4rem;
+    font-size: 6vw;
+    text-transform: uppercase;
     padding-bottom: 3%;
 }
 #sanctuaryInfo div {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-right: 4%;
+    font-size: 1.5vw;
 }
 /* #sanctuaryInfo button {
     width: 30%;
@@ -388,7 +391,7 @@ footer h3 {
 }
 #steps h4 {
     color: #217868;
-    font-size: 1.8rem;
+    font-size: 4vw;
     font-weight: bolder;
     padding: 0 2%;
 }
@@ -403,7 +406,7 @@ footer h3 {
     justify-content: center;
 }
 #steps img {
-    width: 40%;
+    width: 40vw;
 }
 .stepsText {
     max-width: 50%;
@@ -420,9 +423,12 @@ footer h3 {
 }
 .stepsTextLeft p {
     padding: 2%;
+    font-size: 2vw;
 }
 .stepsText p {
     padding: 2%;
+    font-size: 2vw;
+
 }
 
 
@@ -568,6 +574,17 @@ footer h3 {
         width: 45%;
         justify-content: space-around;
         /* border-bottom: 1px dotted #217868; */
+    }
+
+
+    /* About Tablet Styles */
+    /* Make sanctuary info section bigger */
+    #sanctuaryInfo div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-right: 4%;
+        font-size: 2vw;
     }
 }
 
@@ -733,5 +750,51 @@ footer h3 {
         width: 45%;
         justify-content: space-around;
         /* border-bottom: 1px dotted #217868; */
+    }
+
+
+
+    /* About Mobile styles */
+    /* Make sanctuary info section bigger */
+    #sanctuaryInfo div {
+        font-size: 3vw;
+    }
+    #sanctuaryInfo img{
+        display: none;
+    }
+    /* Make the steps into a straight column, no alternating */
+    .stepsImgRight {
+        flex-flow: column wrap;
+        align-items: center;
+
+    }
+    .stepsImgLeft {
+        align-items: center;
+        flex-flow: column-reverse wrap;
+
+    }
+    /* Make text area wider and larger font size */
+    .stepsText {
+        max-width: 90%;
+        justify-content: center;
+    }
+    .stepsTextLeft {
+        max-width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+    }
+    .stepsTextLeft p {
+        padding: 2%;
+        font-size: 3vw;
+    }
+    .stepsText p {
+        padding: 2%;
+        font-size: 3vw;
+    
+    }
+    #steps h4 {
+        font-size: 5vw;
+
     }
 }
