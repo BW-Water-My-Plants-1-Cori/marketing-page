@@ -368,9 +368,7 @@ footer h3 {
     padding-right: 4%;
     font-size: 1.5vw;
 }
-/* #sanctuaryInfo button {
-    width: 30%;
-} */
+
 #sanctuaryInfo span{
     color: #217868;
     font-size: 1.5rem;
@@ -544,22 +542,6 @@ footer h3 {
         justify-content: space-around;
     }
 
-    /* Footer nav to row */
-
-    /* #leftNav {
-        flex-flow: row wrap;
-        text-align: center;
-        width: 100%;
-        justify-content: space-around;
-        border-bottom: 1px dotted #217868;
-    }
-    #rightNav {
-        flex-flow: row wrap;
-        text-align: center;
-        width: 100%;
-        justify-content: space-around;
-        border-bottom: 1px dotted #217868;
-    } */
 
     #leftNav {
         flex-flow: column wrap;
@@ -657,16 +639,6 @@ footer h3 {
         font-size: 5vw;
     }
 
-    /* Re-order floating image to bottom of hero and make smaller
-    #floatingImage{
-        position: relative;
-        left: 25%;
-        width: 50%;
-        max-width: 500px;
-        z-index: 2;
-        border: 2px solid white;
-        
-    } */
 
     /* Remove floating image */
     #floatingImage {
@@ -675,11 +647,8 @@ footer h3 {
 
     /* Even simpler text smaller, centered title, take out gradient */
     #evenSimpler {
-        display: flex;
-        flex-flow: column nowrap;
         background: #c4bdaf;
         padding: auto 3%;
-        color: white;
         padding: 4% 6%;
     }
     
@@ -720,41 +689,28 @@ footer h3 {
         justify-content: space-around;
     }
 
-    /* Footer nav to row */
-
-    /* #leftNav {
-        flex-flow: row wrap;
-        text-align: center;
-        width: 100%;
-        justify-content: space-around;
-        border-bottom: 1px dotted #217868;
-    }
-    #rightNav {
-        flex-flow: row wrap;
-        text-align: center;
-        width: 100%;
-        justify-content: space-around;
-        border-bottom: 1px dotted #217868;
-    } */
-
     #leftNav {
         flex-flow: column wrap;
         text-align: right;
         width: 45%;
         justify-content: space-around;
-        /* border-bottom: 1px dotted #217868; */
     }
     #rightNav {
         flex-flow: column wrap;
         text-align: left;
         width: 45%;
         justify-content: space-around;
-        /* border-bottom: 1px dotted #217868; */
     }
 
 
 
     /* About Mobile styles */
+    /* Make sanctuary info background solid with accent bottom border */
+    #sanctuaryInfo {
+        background: #c4bdaf;
+        border-bottom: 20px solid#8fbcb3;
+        padding: 3%;
+    }
     /* Make sanctuary info section bigger */
     #sanctuaryInfo div {
         font-size: 3vw;
