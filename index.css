@@ -296,6 +296,8 @@ footer h3 {
 }
 .galleryBox img {
     max-width: 100%;
+    height: auto;
+    align-items: flex-start;
 }
 .galleryBox .button {
     position: absolute;
